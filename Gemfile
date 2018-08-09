@@ -16,6 +16,13 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'rails-controller-testing'
+gem 'faker',          '1.7.3'
+gem 'will_paginate',           '3.1.6'
+gem 'bootstrap-will_paginate', '1.0.0'
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
+gem 'ransack'
+gem 'config'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
