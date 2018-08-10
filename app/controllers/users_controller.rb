@@ -17,14 +17,14 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.all.page params[:page]
+    @user = User.find(params[:id])
   end
 
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in user
-      remember user
+      log_in @user
+      remember @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
     else
