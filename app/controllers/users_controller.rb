@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @user = User.where(activate: FILL_IN).all.page params[:page]
+    @user = User.all.page params[:page]
   end
 
   def new
@@ -18,7 +18,6 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    redirect_to root_url and return unless FILL_IN
   end
 
   def create
