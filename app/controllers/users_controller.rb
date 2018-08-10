@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @user = User.all.page params[:page]
+    @user = User.where(activate: FILL_IN).all.page params[:page]
   end
 
   def new
@@ -18,15 +18,27 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+<<<<<<< HEAD
+=======
+    redirect_to root_url and return unless FILL_IN
+>>>>>>> account-activation
   end
 
   def create
     @user = User.new(user_params)
     if @user.save
+<<<<<<< HEAD
       log_in @user
       remember @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
+=======
+    #   log_in @user
+    #   remember @user
+      @user.send_activation_email
+      flash[:info] = "Please check your email to activate your account."
+      redirect_to root_url
+>>>>>>> account-activation
     else
       render 'new'
     end
