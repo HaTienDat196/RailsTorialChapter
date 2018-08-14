@@ -25,6 +25,7 @@ gem 'ransack'
 gem 'config'
 gem 'byebug'
 gem 'haml'
+gem 'rubocop', '~> 0.46.0', require: false
 
 
 gem 'bootsnap', '>= 1.1.0', require: false

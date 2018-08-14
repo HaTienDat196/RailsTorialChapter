@@ -1,0 +1,69 @@
+
+AllCops:
+  Exclude:
+    - db/schema.rb
+    - config/unicorn.rb
+    - tmp/**/*
+    - vendor/bundle/**/*
+    - node_modules/**/*
+    - bin/*
+    - Gemfile
+    - app/services/*
+    - config/puma.rb
+    - config/environments/production.rb
+    - config/routes.rb
+    - config/spring.rb
+    - config/environments/development.rb
+    - config/environment.rb
+    - config/boot.rb
+    - config/initializers/cookies_serializer.rb
+    - config/initializers/wrap_parameters.rb
+    - config/***/**/*
+    - config/application.rb
+  AllowedVariables:
+
+AsciiComments:
+  Enabled: false
+
+Lambda:
+  Enabled: false
+
+ClassAndModuleChildren:
+  Enabled: false
+
+AccessorMethodName:
+  Enabled: false
+
+AndOr:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Lint/StringConversionInInterpolation:
+  Exclude:
+    - 'spec/steps/**/*_steps.rb'
+
+Style/WordArray:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
