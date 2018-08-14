@@ -24,6 +24,8 @@ gem 'bootstrap-kaminari-views'
 gem 'ransack'
 gem 'config'
 gem 'byebug'
+gem 'haml'
+
 
 gem 'bootsnap', '>= 1.1.0', require: false
 

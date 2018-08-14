@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @user = User.all.page params[:page]
+    @user = User.AssociationCollectionall.page params[:page]
   end
 
   def new
