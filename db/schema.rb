@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_10_022631) do
+ActiveRecord::Schema.define(version: 2018_08_14_030348) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
@@ -23,6 +23,10 @@ ActiveRecord::Schema.define(version: 2018_08_10_022631) do
     t.string "activation_digest"
     t.boolean "activated", default: false
     t.datetime "activated_at"
+    t.string "reset_dige"
+    t.datetime "reset_sen_at"
+    t.string "reset_digest"
+    t.datetime "reset_send_at"
   end
 
 end
